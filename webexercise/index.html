@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>Assisgnment</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" xml="space">// <![CDATA[
+    require([
+        'jquery'
+    ], function ($) {
+        $(function(){
+            $(".left_nav_btn").click(function(){
+                var ref = $(this).attr('ref');
+                $(".left_nav_btn.active").removeClass('active');
+                $(this).addClass('active');
+                $(".right_nav_content.active").removeClass('active');
+                $(".right_nav_content[ref="+ref+"]").addClass('active');
+            });
+        });
+    });
+// ]]></script>
+
+</head>
+
+<h1>Casablanca HK</h1>
+<hr>
+<p>Casablanca is one of the leading brands of bedding products in the Greater China region, mainly engaged in the design, production, distribution and retailing of bedding products, with a focus on the high-end and premium markets.</p>
+<div class="logoimg"><img src="css/images/casalogo.JPG" alt="Casablanca Logo"></div>
+
+<body>
+<div class="row">
+<div class="col-lg-4 col-sm-12">
+<div id="nav">
+  <ul id="cms-left-nav">
+    <li class="left_nav_btn nav_title active" ref="1"><a href="aboutus.html">About Us</a></li>
+    <li class="left_nav_btn nav_nav_title" ref="2"><a href="news.html">News</a>
+      <ul class="hideMenu">
+        <li><a href="#">Hong Kong</a></li>
+        <li><a href="#">China</a></li>
+      </ul>
+    </li>
+    
+    <li class="left_nav_btn nav_nav_title" ref="3"><a href="contact.html">Contact Us</a></li>
+    
+    <li class="left_nav_btn nav_nav_title" ref="4"><a href="csr.html">CSR</a></li>
+    <li class="left_nav_btn nav_nav_title" ref="5"><a href="http://shop.casablanca.com.hk/" target="_blank">eShop</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="col-lg-8 col-sm-12">
+  <article class="right_nav_content active" 
+  ref="1">   
+  <h1>About Us</h1>
+    <hr>
+    <div class="content"><p>Casablanca has established business in Hong Kong since 1993. It adopts a multi-brand strategy to provide high-quality products for different market segments. Not only operating mainly three proprietary brands - Casablanca, Casa Calvin and CASA-V, the Company's products also include bed linens, duvets and pillows, and other home accessories such as blankets, mattresses and towels, etc.
+      <br><br>
+    To incorporate with the Group’s development, Casablanca Industrial Park was launched Huizhou in 2013, covering about 100,000 square meters of area.  As a world- class textile R&D center, we equipped with the most advanced production machinery and logistics systems, strictly compliance with the ISO9001 international standards and ISO14000 environmental requirement, setting up the largest production hub with scientific management standards.
+    <br><br>
+    The Group is headquartered in Hong Kong, with the Mainland sales and marketing center located in Shenzhen. Its sales network covers over 70 cities in more than 20 provinces, municipalities and autonomous regions, in the Greater China region including the four Tier-1 cities: Shenzhen, Guangzhou and Beijing, provincial cities and economically prosperous regions.
+    <br><br>
+    Casablanca Group Limited (incorporated in the Cayman Islands) has been successfully listing on the Main Board of The Stock Exchange of Hong Kong Limited since 23 November 2012. The Stock Code is 2223.
+    <br><br>
+    The Group will further penetrate into the Mainland market by expanding its sales network in the Greater China Region, introducing more home textile brands to meet the increasingly complex needs of consumers. In the future, the Group aims to become a world’s leading brand of bedding enterprise continually provide innovative and high quality bedding product.</p></div>
+  </article>
+
+  <article class="right_nav_content" ref="2">
+    <h1>Awarded U Green Awards for 6th consecutive year</h1>
+    <hr>
+    <div class="date"><p>2021-07-09</p></div>
+    <div class="newsimg"><img src="css/images/news.JPG" alt="news"></div>
+    <p class="content">Casablanca is honored to be awarded the U Green Awards  in bedding category for 6 consecutive years. Starting from the concept of <strong>"THINK GREEN, ACT GREEN"</strong>, the Group always applies the eco concepts at every step from raw materials, technology to finished products.
+    <br><br>
+    The Group thrive to protect the environment by well-using the inedible natural materials and convert into skin-friendly fibers in beddings, say the signature's Soybean series, Milk Protein series, and Aloe Vera products. Not only leading the bedding industry to launch more green beddings in market, Casablanca also hopes to encourage the customers and public to practice green lifestyle in daily life.</p><br>
+    </article>
+
+    <article class="right_nav_content" ref="3">
+       <h1>Contact Us</h1>
+    <p><b>Casablanca Group Limited / Casablanca Hong Kong Limited</b><br></p>
+        <p><b>Address</b><br>
+            <Address>5/F Yan Hing Centre, 9-13 Wong Chuk Yeung Street, Fo Tan, Shatin, N.T., Hong Kong</Address></p>
+        <p><b>General Enquiries</b><br>
+            +852 2306 1699<br>
+            <a href="info@casablanca-home.com">info@casablanca-home.com</a></p>
+
+        <p><b>Customer Services</b><br>
+            +852 2687 5113<br>
+            <a href="cs@casablanca-home.com">cs@casablanca-home.com</a></p>
+         </article>
+    <article class="right_nav_content" ref="4"> 
+      <h1>Corporate Social Responsibility</h1>
+      <hr>
+      <h2>Donation of Baby products for “Green Baby”</h2>
+      <div class="date">
+    <p>2021-02-04</p></div>
+    <div class="csrimg"><img src="css/images/donation.JPG" alt="donation" width="450" height="300"></div>
+    <p class="content">To support and encourage single mothers to re-enter the job market, Green Baby, the social enterprise by Caritas employed single mothers to recycling, sorting and selling second-hand baby goods in the community. Casablanca is happy to have donated a batch of baby & kids bedding products to Green Baby today, we sincerely hope that the young mothers can receive our warmest blessing for their babies once received the goods from volunteers!
+      <br><br>
+    The concept of Green Baby "5R" is to Recycle, Refurbish and Reuse second-hand baby products while Rebuild the working ability and confidence of the young mothers and Reignite their hope in life.</p>
+    </article>
+</div>
+</body>
+</html>
